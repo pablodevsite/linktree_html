@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Links</title>
+	<style>
+	
+		/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+		/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+		*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+		  all: unset;
+		  display: revert;
+		}
+
+		/* Preferred box-sizing value */
+		*,
+		*::before,
+		*::after {
+		  box-sizing: border-box;
+		}
+
+		/*
+		  Remove list styles (bullets/numbers)
+		  in case you use it with normalize.css
+		*/
+		ol, ul {
+		  list-style: none;
+		}
+
+		/* For images to not be able to exceed their container */
+		img {
+		  max-width: 100%;
+		}
+
+		/* Removes spacing between cells in tables */
+		table {
+		  border-collapse: collapse;
+		}
+
+		/* Revert the 'white-space' property for textarea elements on Safari */
+		textarea {
+		  white-space: revert;
+		}
+	
+	
+		body {display: flex;min-height: 100vh;flex-direction: column;}
+		main {padding: 20px 10px;}
+		h1 {display:block;margin:3rem 0 3rem 0;text-align:center;font-size:26px;font-weight:bold;}
+		img.imgprofilo {display:block;margin:5px auto 0 auto;border-radius:50%;height:150px;width:auto;}
+
+		section.secintro > a {
+		  background-color: #F2EFE9;
+		  border: solid 1px #564E58;
+		  border-radius: 20px;
+		  margin-bottom: 10px;
+		  display: block;
+		  padding: 18px 0 18px 30px;
+		  text-decoration: none;
+		}
+		section.secintro > a img {
+		  height: 40px;
+		  display: inline;
+		  margin-right: 30px;
+		}
+		section.secintro > a span {font-size: 20px;color: #000;position:relative;top:-12px;}
+		section.secintro > a:hover span {
+		  color: #FD5631;
+		}
+		section.secintro > a:last-child {
+		  margin-bottom: 0;
+		}
+
+		section.secsocial {
+		  margin-top: 30px;
+		  display: flex;
+		  justify-content: center;
+		}
+		section.secsocial a {
+		  margin-right: 20px;
+		}
+		section.secsocial a:last-child {margin-right: 0;}
+		section.secsocial img {height: 50px;width: auto;}
+
+		
+	</style>
+  </head>
+  <body>
+    <main class="container">
+      <img src="img/profilo.jpg" class="imgprofilo" alt="immagine profilo" />
+      <h1>Contattami</h1>
+      <section class="secintro">
+        <a href="https://www.google.com" title="">
+          <img src="img/blog.png" alt="" />
+          <span>Link 1</span>
+        </a>
+        <a href="https://www.google.com" title="">
+          <img src="img/contatti.png" alt="" />
+          <span>Link 2</span>
+        </a>
+        <a href="https://www.google.com" title="">
+          <img src="img/mipresento.png" alt="" />
+          <span>Link 3</span>
+        </a>
+      </section>
+      <section class="secsocial">
+        <a href="#" data-id="6">
+          <img src="img/linkedin.png" alt="linkedin" />
+        </a>
+        <a href="mailto:miamail@gmail.com" data-id="7">
+          <img src="img/email.png" alt="mail" />
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
